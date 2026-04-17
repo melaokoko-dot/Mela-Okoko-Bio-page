@@ -49,6 +49,11 @@ body {
   position: relative;
 }
 
+.slot-machine-blur {
+  filter: blur(0.5px);
+  mask-image: linear-gradient(to bottom, transparent, black 20%, black 80%, transparent);
+}
+
 .grainy-bw::after {
   content: "";
   position: absolute;
