@@ -137,12 +137,12 @@ const InfoPage = ({ onClose }: { onClose: () => void }) => (
     exit={{ opacity: 0 }}
     className="fixed inset-0 bg-white text-black z-[120] p-8 flex flex-col overflow-y-auto"
   >
-    <div className="flex justify-between items-start mb-24 px-4 md:px-12 text-base">
+    <div className="flex justify-between items-start mb-24 px-4 md:px-12">
       <h1 className="font-bold tracking-widest">MELA OKOKO</h1>
       <button onClick={onClose} className="opacity-60 hover:opacity-100 font-bold uppercase tracking-widest">CLOSE</button>
     </div>
 
-    <div className="max-w-xl mx-auto md:ml-12 text-base">
+    <div className="max-w-xl mx-auto md:ml-12">
       <p className="leading-relaxed mb-16 opacity-80 uppercase tracking-[0.1em] font-medium">
         MELA OKOKO IS AN ARCHITECT AND PHOTOGRAPHER IN NAIROBI KENYA. HIS WORK EXPLORES THE INTERSECTION OF BUILT ENVIRONMENTS AND NARRATIVE STORYTELLING. THROUGH PRECISION DESIGN AND CANDID DOCUMENTATION, HE SEEKS TO CAPTURE THE SOUL OF THE SPACES WE INHABIT.
       </p>
@@ -251,7 +251,7 @@ export default function App() {
     }`}>
       
       {/* Header */}
-      <header className={`fixed top-0 left-0 w-full p-6 md:p-8 flex justify-between items-center z-[110] text-base ${
+      <header className={`fixed top-0 left-0 w-full p-6 md:p-8 flex justify-between items-center z-[110] ${
         mode === 'design' ? 'bg-white' : 'bg-black'
       } transition-colors duration-500`}>
         <div className="font-bold tracking-widest uppercase">
@@ -313,7 +313,7 @@ export default function App() {
       </main>
 
       {/* Static Rolling Text Overlay (Solid Plane only around text) */}
-      <div className="fixed bottom-0 left-0 w-full py-12 flex justify-center z-[100] pointer-events-none text-base">
+      <div className="fixed bottom-0 left-0 w-full py-12 flex justify-center z-[100] pointer-events-none">
         <div className="w-full md:w-1/2 px-8 flex flex-col gap-3 text-center md:text-left pointer-events-auto">
           <div 
             onClick={() => setSelectedProject(activeProject)}
