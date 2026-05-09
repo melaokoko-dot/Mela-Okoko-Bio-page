@@ -45,41 +45,199 @@ const SITE_CONTENT = {
 
 // ASSET MANAGEMENT:
 // To swap images, upload your photos to the /public/assets/photos/ folder.
-// Name them as shown below (e.g., 'cover.jpg', '1.jpg', '2.jpg') for each collection.
+// Organize them into numerical folders for each collection.
+// Examples: '/assets/photos/01_nairobi-midday/cover.jpg', etc.
 const PROJECT_DATA: Project[] = [
   {
     id: 'nairobi-street',
     title: 'NAIROBI MIDDAY',
     category: 'STREET PHOTOGRAPHY',
     description: 'DOCUMENTING THE HARSH SHADOWS AND VIBRANT ENERGY OF NAIROBI AT ITS PEAK HOURS. A STUDY OF MOTION AND STILLNESS IN THE CITY CENTER.',
-    // Path: /public/assets/photos/nairobi-midday/cover.jpg
-    coverImage: '/assets/photos/nairobi-midday/cover.jpg',
+    // Path: /public/assets/photos/01_nairobi-midday/cover.jpg
+    coverImage: '/assets/photos/01_nairobi-midday/cover.jpg',
     images: [
-      '/assets/photos/nairobi-midday/1.jpg',
-      '/assets/photos/nairobi-midday/2.jpg',
+      '/assets/photos/01_nairobi-midday/1.jpg',
+      '/assets/photos/01_nairobi-midday/2.jpg',
+    ]
+  },
+  {
+    id: 'street',
+    title: 'SHADES OF NAIROBI',
+    category: 'STREET PHOTOGRAPHY',
+    description: 'A SERIES OF HIGH-CONTRAST ABSTRACTS EXPLORING THE GEOMETRY OF HUMAN CONSTRUCTION AND STREET NARRATIVES.',
+    // Path: /public/assets/photos/02_form-shadow/cover.jpg
+    coverImage: '/assets/photos/02_form-shadow/cover.jpg',
+    images: [
+      '/assets/photos/SON-1.jpg',
+      '/assets/photos/SON-10.jpg',
+      '/assets/photos/SON-11.jpg',
+      '/assets/photos/SON-12.jpg',
+      '/assets/photos/SON-13.jpg',
+      '/assets/photos/SON-14.jpg',
+      '/assets/photos/SON-15.jpg',
+      '/assets/photos/SON-16.jpg',
+      '/assets/photos/SON-17.jpg',
+      '/assets/photos/SON-18.jpg',
+      '/assets/photos/SON-19.jpg',
+      '/assets/photos/SON-2.jpg',
+      '/assets/photos/SON-20.jpg',
+      '/assets/photos/SON-3.jpg',
+      '/assets/photos/SON-4.jpg',
+      '/assets/photos/SON-5.jpg',
+      '/assets/photos/SON-6.jpg',
+      '/assets/photos/SON-7.jpg',
+      '/assets/photos/SON-8.jpg',
+      '/assets/photos/SON-9.jpg',,
     ]
   },
   {
     id: 'documentary-series',
-    title: 'FORM & SHADOW',
+    title: 'CRADLE OF THE FORGOTEN',
     category: 'DOCUMENTARY',
-    description: 'A SERIES OF HIGH-CONTRAST ABSTRACTS EXPLORING THE GEOMETRY OF HUMAN CONSTRUCTION AND STREET NARRATIVES.',
-    // Path: /public/assets/photos/form-shadow/cover.jpg
-    coverImage: '/assets/photos/form-shadow/cover.jpg',
+    description: 'CANDID MOMENTS CAPTURED IN THE HEART OF THE CITY, FOCUSING ON THE INDIVIDUALS WHO DEFINE NAIROBI.',
+    // Path: /public/assets/photos/03_portraits/cover.jpg
+    coverImage: '/assets/photos/03_portraits/cover.jpg',
     images: [
-      '/assets/photos/form-shadow/1.jpg',
-      '/assets/photos/form-shadow/2.jpg',
+      '/assets/photos/Cradle of the forgoten-1.jpg',
+      '/assets/photos/Cradle of the forgoten-10.jpg',
+      '/assets/photos/Cradle of the forgoten-11.jpg',
+      '/assets/photos/Cradle of the forgoten-12.jpg',
+      '/assets/photos/Cradle of the forgoten-13.jpg',
+      '/assets/photos/Cradle of the forgoten-14.jpg',
+      '/assets/photos/Cradle of the forgoten-15.jpg',
+      '/assets/photos/Cradle of the forgoten-16.jpg',
+      '/assets/photos/Cradle of the forgoten-17.jpg',
+      '/assets/photos/Cradle of the forgoten-18.jpg',
+      '/assets/photos/Cradle of the forgoten-19.jpg',
+      '/assets/photos/Cradle of the forgoten-2.jpg',
+      '/assets/photos/Cradle of the forgoten-3.jpg',
+      '/assets/photos/Cradle of the forgoten-4.jpg',
+      '/assets/photos/Cradle of the forgoten-5.jpg',
+      '/assets/photos/Cradle of the forgoten-6.jpg',
+      '/assets/photos/Cradle of the forgoten-7.jpg',
+      '/assets/photos/Cradle of the forgoten-8.jpg',
+      '/assets/photos/Cradle of the forgoten-9.jpg',
     ]
   },
   {
-    id: 'portraits',
-    title: 'STREET PORTRAITS',
-    category: 'PORTRAITURE',
-    description: 'CANDID MOMENTS CAPTURED IN THE HEART OF THE CITY, FOCUSING ON THE INDIVIDUALS WHO DEFINE NAIROBI.',
-    // Path: /public/assets/photos/portraits/cover.jpg
-    coverImage: '/assets/photos/portraits/cover.jpg',
+    id: 'documentary-series',
+    title: 'SEEDS OF A NORMAD',
+    category: 'DOCUMENTARY',
+    description: 'EXPLORING THE GEOMETRY AND SCALE OF NAIROBI\'S EVOLVING ARCHITECTURAL LANDSCAPE.',
+    // Path: /public/assets/photos/04_architecture/cover.jpg
+    coverImage: '/assets/photos/04_architecture/cover.jpg',
     images: [
-      '/assets/photos/portraits/1.jpg',
+      '/assets/photos/Seeds of a Normad-1.jpg',
+      '/assets/photos/Seeds of a Normad-10.jpg',
+      '/assets/photos/Seeds of a Normad-11.jpg',
+      '/assets/photos/Seeds of a Normad-12.jpg',
+      '/assets/photos/Seeds of a Normad-13.jpg',
+      '/assets/photos/Seeds of a Normad-2.jpg',
+      '/assets/photos/Seeds of a Normad-3.jpg',
+      '/assets/photos/Seeds of a Normad-4.jpg',
+      '/assets/photos/Seeds of a Normad-5.jpg',
+      '/assets/photos/Seeds of a Normad-6.jpg',
+      '/assets/photos/Seeds of a Normad-7.jpg',
+      '/assets/photos/Seeds of a Normad-8.jpg',
+      '/assets/photos/Seeds of a Normad-9.jpg',
+    ]
+  },
+  {
+    id: 'street',
+    title: 'CHILDREN OF NAIROBI',
+    category: 'STREET PHOTOGRAPHY',
+    description: 'THE CITY TRANSFORMED BY ARTIFICIAL LIGHT AND LONG EXPOSURES.',
+    // Path: /public/assets/photos/05_night/cover.jpg
+    coverImage: '/assets/photos/05_night/cover.jpg',
+    images: [
+      '/assets/photos/Children of colour-1.jpg',
+      '/assets/photos/Children of colour-10.jpg',
+      '/assets/photos/Children of colour-11.jpg',
+      '/assets/photos/Children of colour-12.jpg',
+      '/assets/photos/Children of colour-2.jpg',
+      '/assets/photos/Children of colour-3.jpg',
+      '/assets/photos/Children of colour-4.jpg',
+      '/assets/photos/Children of colour-5.jpg',
+      '/assets/photos/Children of colour-6.jpg',
+      '/assets/photos/Children of colour-8.jpg',
+      '/assets/photos/Children of colour-9.jpg',
+    ]
+  },
+  {
+    id: 'street',
+    title: 'STREET OF COLOUR',
+    category: 'STREET PHOTOGRPHY',
+    description: 'STORIES OF TRADITION AND MODERNITY INTERTWINED IN EVERYDAY KENYAN LIFE.',
+    // Path: /public/assets/photos/06_culture/cover.jpg
+    coverImage: '/assets/photos/06_culture/cover.jpg',
+    images: [
+      '/assets/photos/SOC-1.jpg',
+      '/assets/photos/SOC-10.jpg',
+      '/assets/photos/SOC-11.jpg',
+      '/assets/photos/SOC-12.jpg',
+      '/assets/photos/SOC-13.jpg',
+      '/assets/photos/SOC-14.jpg',
+      '/assets/photos/SOC-15.jpg',
+      '/assets/photos/SOC-16.jpg',
+      '/assets/photos/SOC-17.jpg',
+      '/assets/photos/SOC-18.jpg',
+      '/assets/photos/SOC-19.jpg',
+      '/assets/photos/SOC-2.jpg',
+      '/assets/photos/SOC-20.jpg',
+      '/assets/photos/SOC-21.jpg',
+      '/assets/photos/SOC-22.jpg',
+      '/assets/photos/SOC-23.jpg',
+      '/assets/photos/SOC-24.jpg',
+      '/assets/photos/SOC-25.jpg',
+      '/assets/photos/SOC-26.jpg',
+      '/assets/photos/SOC-27.jpg',
+      '/assets/photos/SOC-28.jpg',
+      '/assets/photos/SOC-3.jpg',
+      '/assets/photos/SOC-4.jpg',
+      '/assets/photos/SOC-5.jpg',
+      '/assets/photos/SOC-6.jpg',
+      '/assets/photos/SOC-7.jpg',
+      '/assets/photos/SOC-8.jpg',
+      '/assets/photos/SOC-9.jpg',
+    ]
+  },
+  {
+    id: 'culture',
+    title: 'KIBERA ART DISTRICT',
+    category: 'DOCUMENTARY',
+    description: 'FINDING SIMPLICITY IN THE CHAOS OF THE URBAN ENVIRONMENT.',
+    // Path: /public/assets/photos/07_minimalism/cover.jpg
+    coverImage: '/assets/photos/07_minimalism/cover.jpg',
+    images: [
+      '/assets/photos/Kibera-1.jpg',
+      '/assets/photos/Kibera-10.jpg',
+      '/assets/photos/Kibera-11.jpg',
+      '/assets/photos/Kibera-12.jpg',
+      '/assets/photos/Kibera-13.jpg',
+      '/assets/photos/Kibera-14.jpg',
+      '/assets/photos/Kibera-15.jpg',
+      '/assets/photos/Kibera-16.jpg',
+      '/assets/photos/Kibera-17.jpg',
+      '/assets/photos/Kibera-18.jpg',
+      '/assets/photos/Kibera-2.jpg',
+      '/assets/photos/Kibera-3.jpg',
+      '/assets/photos/Kibera-4.jpg',
+      '/assets/photos/Kibera-5.jpg',
+      '/assets/photos/Kibera-6.jpg',
+      '/assets/photos/Kibera-7.jpg',
+      '/assets/photos/Kibera-8.jpg',
+      '/assets/photos/Kibera-9.jpg',
+    ]
+  },
+  {
+    id: 'motion',
+    title: 'CITY IN MOTION',
+    category: 'STREET PHOTOGRAPHY',
+    description: 'EXPERIMENTAL BLUR AND SPEED CAPTURING THE CONSTANT FLOW OF THE CAPITAL.',
+    // Path: /public/assets/photos/08_motion/cover.jpg
+    coverImage: '/assets/photos/08_motion/cover.jpg',
+    images: [
+      '/assets/photos/08_motion/1.jpg',
     ]
   }
 ];

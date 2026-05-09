@@ -1,4 +1,14 @@
 # This folder is for your photography assets.
-# Organize your photos into subfolders like:
-# /public/assets/photos/nairobi-midday/
-# /public/assets/photos/portraits/
+# Organize your photos into 8 subfolders with numerical prefixes to keep them in order:
+# /public/assets/photos/01_nairobi-midday/
+# /public/assets/photos/02_form-shadow/
+# /public/assets/photos/03_portraits/
+# /public/assets/photos/04_architecture/
+# /public/assets/photos/05_night/
+# /public/assets/photos/06_culture/
+# /public/assets/photos/07_minimalism/
+# /public/assets/photos/08_motion/
+
+# Inside each folder, standardise naming:
+# cover.jpg (The main image shown in the scroll)
+# 1.jpg, 2.jpg, 3.jpg... (Images shown in the collection detail)
