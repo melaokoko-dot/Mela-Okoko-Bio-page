@@ -19,34 +19,70 @@ interface Project {
 
 // --- Mock Data ---
 
-const PHOTO_PROJECTS: Project[] = [
+// --- CONFIGURABLE CONTENT ---
+// Edit this section to update your website information
+
+const SITE_CONTENT = {
+  name: "MELA OKOKO",
+  role: "ARCHITECTURAL TECHNOLOGIST + STREET & DOCUMENTARY PHOTOGRAPHER",
+  location: "NAIROBI, KENYA",
+  bio: "MELA OKOKO IS AN ARCHITECTURAL TECHNOLOGIST AND A STREET AND DOCUMENTARY PHOTOGRAPHER IN NAIROBI KENYA. HIS WORK EXPLORES THE INTERSECTION OF BUILT ENVIRONMENTS AND NARRATIVE STORYTELLING. THROUGH PRECISION DESIGN AND CANDID DOCUMENTATION, HE SEEKS TO CAPTURE THE SOUL OF THE SPACES WE INHABIT.",
+  contacts: {
+    email: "MELAOKOKO@GMAIL.COM",
+    phone: "+254 000 000 000",
+    instagram: "@MELA_OKOKO",
+    instagramUrl: "https://instagram.com/mela_okoko" 
+  },
+  collaborations: [
+    "NAIROBI DESIGN WEEK",
+    "BRITISH COUNCIL KENYA",
+    "MARA FOUNDATION",
+    "VOGUE ARCHITECTURE",
+    "STUDIO N",
+    "INDEPENDENT NARRATIVES"
+  ]
+};
+
+// ASSET MANAGEMENT:
+// To swap images, upload your photos to the /public/assets/photos/ folder.
+// Name them as shown below (e.g., 'cover.jpg', '1.jpg', '2.jpg') for each collection.
+const PROJECT_DATA: Project[] = [
   {
-    id: 'art-1',
+    id: 'nairobi-street',
     title: 'NAIROBI MIDDAY',
     category: 'STREET PHOTOGRAPHY',
-    description: 'DOCUMENTING THE HARSH SHADOWS AND VIBRANT ENERGY OF NAIROBI AT ITS PEAK HOURS.',
-    coverImage: 'https://picsum.photos/seed/mela-art-1/1200/800',
+    description: 'DOCUMENTING THE HARSH SHADOWS AND VIBRANT ENERGY OF NAIROBI AT ITS PEAK HOURS. A STUDY OF MOTION AND STILLNESS IN THE CITY CENTER.',
+    // Path: /public/assets/photos/nairobi-midday/cover.jpg
+    coverImage: '/assets/photos/nairobi-midday/cover.jpg',
     images: [
-      'https://picsum.photos/seed/mela-art-1-1/1200/800',
-      'https://picsum.photos/seed/mela-art-1-2/1200/800',
+      '/assets/photos/nairobi-midday/1.jpg',
+      '/assets/photos/nairobi-midday/2.jpg',
     ]
   },
   {
-    id: 'art-2',
+    id: 'documentary-series',
     title: 'FORM & SHADOW',
     category: 'DOCUMENTARY',
     description: 'A SERIES OF HIGH-CONTRAST ABSTRACTS EXPLORING THE GEOMETRY OF HUMAN CONSTRUCTION AND STREET NARRATIVES.',
-    coverImage: 'https://picsum.photos/seed/mela-art-2/1200/800',
+    // Path: /public/assets/photos/form-shadow/cover.jpg
+    coverImage: '/assets/photos/form-shadow/cover.jpg',
     images: [
-      'https://picsum.photos/seed/mela-art-2-1/1200/800',
-      'https://picsum.photos/seed/mela-art-2-2/1200/800',
+      '/assets/photos/form-shadow/1.jpg',
+      '/assets/photos/form-shadow/2.jpg',
+    ]
+  },
+  {
+    id: 'portraits',
+    title: 'STREET PORTRAITS',
+    category: 'PORTRAITURE',
+    description: 'CANDID MOMENTS CAPTURED IN THE HEART OF THE CITY, FOCUSING ON THE INDIVIDUALS WHO DEFINE NAIROBI.',
+    // Path: /public/assets/photos/portraits/cover.jpg
+    coverImage: '/assets/photos/portraits/cover.jpg',
+    images: [
+      '/assets/photos/portraits/1.jpg',
     ]
   }
 ];
-
-// --- Utilities ---
-
-const CHARS = " ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+&/-.";
 
 // --- Components ---
 
@@ -102,32 +138,41 @@ const InfoPage = ({ onClose }: { onClose: () => void }) => (
     className="fixed inset-0 bg-white/80 backdrop-blur-xl text-black z-[120] p-8 flex flex-col overflow-y-auto"
   >
     <div className="flex justify-between items-start mb-24 px-4 md:px-12">
-      <h1 className="font-bold tracking-widest">MELA OKOKO</h1>
+      <h1 className="font-bold tracking-widest">{SITE_CONTENT.name}</h1>
       <button onClick={onClose} className="opacity-60 hover:opacity-100 font-bold uppercase tracking-widest">CLOSE</button>
     </div>
 
     <div className="max-w-xl mx-auto md:ml-12">
       <p className="leading-relaxed mb-16 opacity-80 uppercase tracking-[0.1em] font-medium">
-        MELA OKOKO IS AN ARCHITECTURAL TECHNOLOGIST AND A STREET AND DOCUMENTARY PHOTOGRAPHER IN NAIROBI KENYA. HIS WORK EXPLORES THE INTERSECTION OF BUILT ENVIRONMENTS AND NARRATIVE STORYTELLING. THROUGH PRECISION DESIGN AND CANDID DOCUMENTATION, HE SEEKS TO CAPTURE THE SOUL OF THE SPACES WE INHABIT.
+        {SITE_CONTENT.bio}
       </p>
 
-      <div className="space-y-6 mb-20">
+      <div className="space-y-8 mb-20">
         <h2 className="opacity-40 uppercase tracking-[0.2em] font-bold">CONTACT</h2>
-        <div className="space-y-2">
-          <p>MELAOKOKO@GMAIL.COM</p>
-          <p>+254 000 000 000</p>
+        <div className="space-y-4">
+          <div>
+            <p className="opacity-40 text-[10px] mb-1">EMAIL</p>
+            <p>{SITE_CONTENT.contacts.email}</p>
+          </div>
+          <div>
+            <p className="opacity-40 text-[10px] mb-1">PHONE</p>
+            <p>{SITE_CONTENT.contacts.phone}</p>
+          </div>
+          <div>
+            <p className="opacity-40 text-[10px] mb-1">INSTAGRAM</p>
+            <a href={SITE_CONTENT.contacts.instagramUrl} target="_blank" rel="noreferrer" className="hover:opacity-60 transition-opacity">
+              {SITE_CONTENT.contacts.instagram}
+            </a>
+          </div>
         </div>
       </div>
 
       <div className="space-y-6 pb-20">
         <h2 className="opacity-40 uppercase tracking-[0.2em] font-bold">CLIENTS + COLLABORATIONS</h2>
         <div className="flex flex-wrap gap-x-12 gap-y-3 opacity-60 uppercase tracking-wider">
-          <p>NAIROBI DESIGN WEEK</p>
-          <p>BRITISH COUNCIL KENYA</p>
-          <p>MARA FOUNDATION</p>
-          <p>VOGUE ARCHITECTURE</p>
-          <p>STUDIO N</p>
-          <p>INDEPENDENT NARRATIVES</p>
+          {SITE_CONTENT.collaborations.map(collab => (
+            <p key={collab}>{collab}</p>
+          ))}
         </div>
       </div>
     </div>
@@ -139,7 +184,7 @@ const ProjectDetail = ({ project, onBack }: { project: Project, onBack: () => vo
     initial={{ opacity: 0 }}
     animate={{ opacity: 1 }}
     exit={{ opacity: 0 }}
-    className="fixed inset-0 bg-inherit text-inherit z-[110] p-8 flex flex-col overflow-y-auto"
+    className="fixed inset-0 bg-white text-black z-[110] p-8 flex flex-col overflow-y-auto"
   >
     <div className="flex justify-between items-start mb-16 px-4 md:px-0">
       <button onClick={onBack} className="opacity-60 hover:opacity-100 font-bold uppercase tracking-widest">BACK</button>
@@ -173,8 +218,7 @@ export default function App() {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
   const [activeIndex, setActiveIndex] = useState(0);
 
-  const projects = useMemo(() => PHOTO_PROJECTS, []);
-
+  const projects = useMemo(() => PROJECT_DATA, []);
   const activeProject = projects[activeIndex] || projects[0];
 
   const scrollToTop = () => {
@@ -215,7 +259,7 @@ export default function App() {
             onClick={scrollToTop}
             className="font-bold tracking-widest uppercase hover:opacity-50 transition-opacity"
           >
-            MELA OKOKO
+            {SITE_CONTENT.name}
           </button>
         </div>
 
@@ -237,7 +281,7 @@ export default function App() {
             data-index={idx}
             className="scroll-item px-8 flex flex-col items-center justify-center h-screen relative"
           >
-            {/* Image Container (50% desktop, 100% mobile) */}
+            {/* Image Container */}
             <div 
               onClick={() => setSelectedProject(project)}
               className="w-full md:w-1/2 grainy-bw cursor-pointer group flex items-center justify-center overflow-hidden"
@@ -264,6 +308,14 @@ export default function App() {
             <div className="font-bold tracking-[0.2em] mb-2 uppercase">
               <RollingText text={activeProject?.title || ""} />
             </div>
+            
+            {/* Added Collection Description in overlay */}
+            <div className="mt-2 mb-3 max-w-sm hidden md:block">
+               <p className="text-[10px] opacity-40 uppercase tracking-widest leading-relaxed">
+                 {activeProject?.description}
+               </p>
+            </div>
+
             <div className="opacity-40 tracking-[0.3em] font-bold uppercase">
               <RollingText text={activeProject?.category || ""} />
             </div>
