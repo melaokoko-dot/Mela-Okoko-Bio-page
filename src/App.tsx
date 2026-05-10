@@ -440,12 +440,12 @@ export default function App() {
             
             {/* Added Collection Description in overlay */}
             <div className="mt-2 mb-3 max-w-sm hidden md:block">
-               <p className="text-[10px] opacity-40 uppercase tracking-widest leading-relaxed">
+               <p className="text-[10px] opacity-60 uppercase tracking-widest leading-relaxed">
                  {activeProject?.description}
                </p>
             </div>
 
-            <div className="opacity-40 tracking-[0.3em] font-bold uppercase">
+            <div className="opacity-60 tracking-[0.3em] font-bold uppercase">
               <RollingText text={activeProject?.category || ""} />
             </div>
           </div>
