@@ -1,12 +1,11 @@
 # This folder is for your photography assets.
-# Organize your photos into subfolders with numerical prefixes:
-# /public/assets/photos/01_shades-of-nairobi/
-# /public/assets/photos/02_cradle-of-forgotten/
-# /public/assets/photos/03_seeds-of-nomad/
-# /public/assets/photos/04_children-of-nairobi/
-# /public/assets/photos/05_street-of-colour/
-# /public/assets/photos/06_kibera-art/
+# Organize your photos into these subfolders:
 
-# Inside each folder, use this naming convention:
-# cover.jpg (The main image shown in the scroll)
-# 1.jpg, 2.jpg, 3.jpg... (Images shown in the collection detail)
+# 01_shades-of-nairobi/ (Contains SON-1.jpg, etc.)
+# 02_cradle-of-forgotten/ (Contains Cradle of the forgoten-1.jpg, etc.)
+# 03_seeds-of-nomad/ (Contains Seeds of a Normad-1.jpg, etc.)
+# 04_children-of-nairobi/ (Contains Children of colour-1.jpg, etc.)
+# 05_street-of-colour/ (Contains SOC-1.jpg, etc.)
+# 06_kibera-art/ (Contains Kibera-1.jpg, etc.)
+
+# Tip: Keep the filenames inside each folder exactly as they are in App.tsx.
