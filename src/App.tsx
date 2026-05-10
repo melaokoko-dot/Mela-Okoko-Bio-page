@@ -30,11 +30,16 @@ const SITE_CONTENT = {
   contacts: {
     email: "MELAOKOKO@GMAIL.COM",
     phone: "+254 740 326 509",
-    instagram: "@MELA_OKOKO",
-    instagramUrl: "https://instagram.com/melaokok" 
+    instagram: "@MELAOKOKO",
+    instagramUrl: "https://instagram.com/melaokoko" 
   },
   collaborations: [
-    "AFRICA COLLECT TEXTILES"
+    "NAIROBI DESIGN WEEK",
+    "BRITISH COUNCIL KENYA",
+    "MARA FOUNDATION",
+    "VOGUE ARCHITECTURE",
+    "STUDIO N",
+    "INDEPENDENT NARRATIVES"
   ]
 };
 
@@ -310,9 +315,9 @@ const ProjectDetail = ({ project, onBack }: { project: Project, onBack: () => vo
     exit={{ opacity: 0 }}
     className="fixed inset-0 bg-white text-black z-[110] p-8 flex flex-col overflow-y-auto"
   >
-    <div className="flex justify-between items-start mb-16 px-4 md:px-0">
-      <button onClick={onBack} className="opacity-60 hover:opacity-100 font-bold uppercase tracking-widest">BACK</button>
-      <h1 className="opacity-20 font-bold uppercase tracking-widest">{project.category}</h1>
+    <div className="sticky top-0 bg-white/90 backdrop-blur-md z-20 flex justify-between items-center py-6 mb-12 px-4 md:px-0 border-b border-black/5">
+      <button onClick={onBack} className="opacity-60 hover:opacity-100 font-bold uppercase tracking-widest text-sm">BACK</button>
+      <h1 className="opacity-20 font-bold uppercase tracking-widest text-sm">{project.category}</h1>
     </div>
 
     <div className="w-full mx-auto md:w-1/2">
@@ -327,7 +332,7 @@ const ProjectDetail = ({ project, onBack }: { project: Project, onBack: () => vo
             <img 
               src={img} 
               alt={`${project.title} ${idx + 1}`} 
-              className="w-full grayscale contrast-125"
+              className="w-full"
               referrerPolicy="no-referrer"
             />
           </div>
