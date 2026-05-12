@@ -328,11 +328,11 @@ const ProjectDetail = ({ project, onBack }: { project: Project, onBack: () => vo
 
       <div className="space-y-12 pb-24">
         {project.images.map((img, idx) => (
-          <div key={idx} className="grainy-bw">
+          <div key={idx} className="relative">
             <img 
               src={img} 
               alt={`${project.title} ${idx + 1}`} 
-              className="w-full"
+              className="w-full h-auto object-cover"
               referrerPolicy="no-referrer"
             />
           </div>
@@ -413,15 +413,17 @@ export default function App() {
             {/* Image Container */}
             <div 
               onClick={() => setSelectedProject(project)}
-              className="w-full md:w-1/2 grainy-bw cursor-pointer group flex items-center justify-center overflow-hidden"
-              style={{ maxHeight: 'calc(100vh - 250px)' }}
+              className="w-full h-screen cursor-pointer group flex items-center justify-center overflow-hidden"
             >
               <img 
                 src={project.coverImage} 
                 alt={project.title} 
-                className="max-h-full w-auto object-contain grayscale contrast-125 transition-transform duration-500 group-hover:scale-[1.02]"
+                className="w-full h-full object-cover grayscale contrast-125 transition-transform duration-1000 group-hover:scale-[1.05]"
                 referrerPolicy="no-referrer"
               />
+              
+              {/* Grain Overlay only for cover images */}
+              <div className="absolute inset-0 pointer-events-none opacity-20 grainy-bw mix-blend-overlay"></div>
             </div>
           </section>
         ))}
@@ -440,12 +442,12 @@ export default function App() {
             
             {/* Added Collection Description in overlay */}
             <div className="mt-2 mb-3 max-w-sm hidden md:block">
-               <p className="text-[10px] opacity-60 uppercase tracking-widest leading-relaxed">
+               <p className="text-[10px] opacity-40 uppercase tracking-widest leading-relaxed">
                  {activeProject?.description}
                </p>
             </div>
 
-            <div className="opacity-60 tracking-[0.3em] font-bold uppercase">
+            <div className="opacity-40 tracking-[0.3em] font-bold uppercase">
               <RollingText text={activeProject?.category || ""} />
             </div>
           </div>
