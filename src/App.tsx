@@ -190,16 +190,13 @@ const PROJECT_DATA: Project[] = [
     description: 'Kibera Art District is a living canvas where creativity grows from the streets. Beyond the walls and alleys, hidden talent emerges in paint, performance, and craft, young artists turning struggle into expression, and everyday life into powerful visual stories shaped by resilience, imagination, and community spirit.',
     coverImage: 'assets/photos/06_kibera-art/Kibera-5.jpg',
     images: [
-      'assets/photos/06_kibera-art/Kibera-1.jpg',
+      'assets/photos/06_kibera-art/Kibera-5.jpg',
+      'assets/photos/06_kibera-art/Kibera-18.jpg',
+      'assets/photos/06_kibera-art/Kibera-4.jpg',
       'assets/photos/06_kibera-art/Kibera-2.jpg',
       'assets/photos/06_kibera-art/Kibera-3.jpg',
-      'assets/photos/06_kibera-art/Kibera-4.jpg',
-      'assets/photos/06_kibera-art/Kibera-5.jpg',
+      'assets/photos/06_kibera-art/Kibera-1.jpg',
       'assets/photos/06_kibera-art/Kibera-6.jpg',
-      'assets/photos/06_kibera-art/Kibera-7.jpg',
-      'assets/photos/06_kibera-art/Kibera-8.jpg',
-      'assets/photos/06_kibera-art/Kibera-9.jpg',
-      'assets/photos/06_kibera-art/Kibera-10.jpg',
       'assets/photos/06_kibera-art/Kibera-11.jpg',
       'assets/photos/06_kibera-art/Kibera-12.jpg',
       'assets/photos/06_kibera-art/Kibera-13.jpg',
@@ -207,7 +204,10 @@ const PROJECT_DATA: Project[] = [
       'assets/photos/06_kibera-art/Kibera-15.jpg',
       'assets/photos/06_kibera-art/Kibera-16.jpg',
       'assets/photos/06_kibera-art/Kibera-17.jpg',
-      'assets/photos/06_kibera-art/Kibera-18.jpg',
+      'assets/photos/06_kibera-art/Kibera-7.jpg',
+      'assets/photos/06_kibera-art/Kibera-8.jpg',
+      'assets/photos/06_kibera-art/Kibera-9.jpg',
+      'assets/photos/06_kibera-art/Kibera-10.jpg',
     ]
   }
 ];
