@@ -34,12 +34,9 @@ const SITE_CONTENT = {
     instagramUrl: "https://instagram.com/melaokoko" 
   },
   collaborations: [
-    "NAIROBI DESIGN WEEK",
-    "BRITISH COUNCIL KENYA",
-    "MARA FOUNDATION",
-    "VOGUE ARCHITECTURE",
-    "STUDIO N",
-    "INDEPENDENT NARRATIVES"
+    "AFRICA COLLECT TEXTILES",
+    "THE LOOM ROOM 2025",
+   
   ]
 };
 
@@ -193,7 +190,6 @@ const PROJECT_DATA: Project[] = [
       'assets/photos/06_kibera-art/Kibera-5.jpg',
       'assets/photos/06_kibera-art/Kibera-18.jpg',
       'assets/photos/06_kibera-art/Kibera-4.jpg',
-      'assets/photos/06_kibera-art/Kibera-2.jpg',
       'assets/photos/06_kibera-art/Kibera-3.jpg',
       'assets/photos/06_kibera-art/Kibera-1.jpg',
       'assets/photos/06_kibera-art/Kibera-6.jpg',
@@ -204,6 +200,7 @@ const PROJECT_DATA: Project[] = [
       'assets/photos/06_kibera-art/Kibera-15.jpg',
       'assets/photos/06_kibera-art/Kibera-16.jpg',
       'assets/photos/06_kibera-art/Kibera-17.jpg',
+      'assets/photos/06_kibera-art/Kibera-2.jpg',
       'assets/photos/06_kibera-art/Kibera-7.jpg',
       'assets/photos/06_kibera-art/Kibera-8.jpg',
       'assets/photos/06_kibera-art/Kibera-9.jpg',
