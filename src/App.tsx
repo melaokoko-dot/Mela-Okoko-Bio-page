@@ -52,7 +52,7 @@ const PROJECT_DATA: Project[] = [
     id: 'street',
     title: 'SHADES OF NAIROBI',
     category: 'STREET PHOTOGRAPHY',
-    description: 'A SERIES OF HIGH-CONTRAST ABSTRACTS EXPLORING THE GEOMETRY OF HUMAN CONSTRUCTION AND STREET NARRATIVES.',
+    description: 'Nairobi’s beauty and form exist beyond color.',
     coverImage: 'assets/photos/01_shades-of-nairobi/SON-18.jpg',
     images: [
       'assets/photos/01_shades-of-nairobi/SON-1.jpg',
