@@ -151,6 +151,8 @@ const PROJECT_DATA: Project[] = [
     description: 'Where light lingers on faces, movement, and moments that pass too quickly to hold, yet stay vivid in memory.',
     coverImage: 'assets/photos/05_street-of-colour/SOC-8.jpg',
     images: [
+      'assets/photos/05_street-of-colour/SOC-29.jpg',
+      'assets/photos/05_street-of-colour/SOC-30.jpg',
       'assets/photos/05_street-of-colour/SOC-1.jpg',
       'assets/photos/05_street-of-colour/SOC-3.jpg',
       'assets/photos/05_street-of-colour/SOC-4.jpg',
