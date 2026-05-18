@@ -413,17 +413,17 @@ export default function App() {
             {/* Image Container */}
             <div 
               onClick={() => setSelectedProject(project)}
-              className="w-full h-screen cursor-pointer group flex items-center justify-center overflow-hidden"
+              className="w-full h-screen cursor-pointer group flex items-center justify-center overflow-hidden p-6 md:p-24 bg-white"
             >
               <img 
                 src={project.coverImage} 
                 alt={project.title} 
-                className="w-full h-full object-cover grayscale contrast-125 transition-transform duration-1000 group-hover:scale-[1.05]"
+                className="w-full h-full object-contain grayscale contrast-125 transition-transform duration-1000 group-hover:scale-[1.02]"
                 referrerPolicy="no-referrer"
               />
               
               {/* Grain Overlay only for cover images */}
-              <div className="absolute inset-0 pointer-events-none opacity-20 grainy-bw mix-blend-overlay"></div>
+              <div className="absolute inset-0 pointer-events-none opacity-10 grainy-bw mix-blend-overlay"></div>
             </div>
           </section>
         ))}
