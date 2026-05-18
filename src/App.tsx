@@ -313,20 +313,15 @@ const ProjectDetail = ({ project, onBack }: { project: Project, onBack: () => vo
     initial={{ opacity: 0 }}
     animate={{ opacity: 1 }}
     exit={{ opacity: 0 }}
-    className="fixed inset-0 bg-white text-black z-[110] p-8 flex flex-col overflow-y-auto"
+    className="fixed inset-0 bg-white text-black z-[110] flex flex-col overflow-y-auto"
   >
-    <div className="sticky top-0 bg-white/90 backdrop-blur-md z-20 flex justify-between items-center py-6 mb-12 px-4 md:px-0 border-b border-black/5">
-      <button onClick={onBack} className="opacity-60 hover:opacity-100 font-bold uppercase tracking-widest text-sm">BACK</button>
-      <h1 className="opacity-20 font-bold uppercase tracking-widest text-sm">{project.category}</h1>
-    </div>
-
-    <div className="w-full mx-auto md:w-1/2">
-      <div className="mb-12">
-        <h2 className="font-bold mb-4 tracking-[0.2em] uppercase">{project.title}</h2>
-        <p className="opacity-60 leading-relaxed uppercase tracking-wider">{project.description}</p>
+    <div className="w-full mx-auto md:w-1/2 p-8 pt-24 md:pt-32">
+      <div className="mb-16">
+        <h2 className="font-bold mb-4 tracking-[0.2em] uppercase text-xl">{project.title}</h2>
+        <p className="opacity-60 leading-relaxed uppercase tracking-widest text-xs md:text-sm max-w-md">{project.description}</p>
       </div>
 
-      <div className="space-y-12 pb-24">
+      <div className="space-y-12 pb-48">
         {project.images.map((img, idx) => (
           <div key={idx} className="relative">
             <img 
@@ -338,6 +333,16 @@ const ProjectDetail = ({ project, onBack }: { project: Project, onBack: () => vo
           </div>
         ))}
       </div>
+    </div>
+
+    {/* Floating Close Button */}
+    <div className="fixed bottom-12 left-1/2 -translate-x-1/2 z-[120]">
+      <button 
+        onClick={onBack}
+        className="bg-black text-white px-12 py-5 rounded-full font-bold uppercase tracking-[0.4em] text-[10px] shadow-2xl hover:scale-110 active:scale-95 transition-all duration-300 backdrop-blur-md bg-opacity-95"
+      >
+        CLOSE
+      </button>
     </div>
   </motion.div>
 );
